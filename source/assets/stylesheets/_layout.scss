@@ -1,0 +1,50 @@
+body {
+  background-color: tint($twitter-light-grey, 60%);
+}
+
+.nav-bar {
+  background-color: white;
+  border-bottom: 1px solid $twitter-light-grey;
+  height: 46px;
+  letter-spacing: 0.01em;
+
+  .grid-container {
+    @include outer-container;
+
+    display: flex;
+    .main-nav {
+      display: flex;
+    }
+
+    .logo {
+      color: $twitter-bird;
+      font-size: 1.5em;
+    }
+
+    .search-bar {
+      align-self: center;
+
+      #search-bar{
+        border-radius: 50px;
+        background-color: $twitter-white;
+      }
+    }
+  }
+}
+
+
+.icon {
+  color: $twitter-grey;
+  flex: row;
+  margin-right: 12px;
+  font-size: 0.8em;
+  &:hover {
+    color: $twitter-blue;
+    transition: $base-duration * 2;
+  }
+  .fa {
+    margin: 11px 4px 0 10px;
+    font-size: 20px;
+  }
+
+}

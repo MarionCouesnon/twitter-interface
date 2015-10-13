@@ -3,7 +3,11 @@
 @import "vendor/normalize";
 
 @import "bourbon";
-@import "neat";
 @import "base/base";
+@import "base/grid-settings";
+@import "neat";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 @import "layout";
+@import "profil";
