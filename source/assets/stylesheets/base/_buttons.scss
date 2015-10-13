@@ -1,6 +1,6 @@
 #{$all-buttons} {
   appearance: none;
-  background-color: $action-color;
+  background-color: $twitter-bird;
   border: 0;
   border-radius: $base-border-radius;
   color: #fff;
@@ -11,7 +11,7 @@
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: $small-spacing;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;

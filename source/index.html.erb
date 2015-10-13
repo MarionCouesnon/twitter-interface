@@ -1,18 +1,21 @@
 <nav class="nav-bar">
     <div class="grid-container">
-      <ul class="main-nav">
-        <li class="accueil icon"><i class="fa fa-home"></i>Accueil</li>
-        <li class="notif icon"><i class="fa fa-bell"></i>Notifications</li>
-        <li class="messages icon"><i class="fa fa-envelope"></i>Messages</li>
+      <ul class="left-nav">
+        <li class="accueil icon"><i class="fa fa-home"></i> Accueil</li>
+        <li class="notif icon"><i class="fa fa-bell"></i> Notifications</li>
+        <li class="messages icon"><i class="fa fa-envelope"></i> Messages</li>
       </ul>
       <div class="logo"><i class="fa fa-twitter"></i></div>
-      <div class="search-bar">
-        <form>
-          <input type="text" id="search-bar" name="rechercher" placeholder="Rechercher sur Twitter">
-        </form>
-      </div>
-      <div class="profile-shortcut"></div>
-      <div class="tweet-button"></div>
+      <ul class="right-nav">
+        <li class="search-bar">
+          <form>
+            <input type="text" id="search-bar" name="rechercher" placeholder="Rechercher sur Twitter">
+            <i class="fa fa-search"></i>
+          </form>
+        </li>
+        <li class="profile-shortcut"><img src="https://pbs.twimg.com/profile_images/637414809357709312/ePANi0hH_bigger.jpg"></img></li>
+        <li><button name="tweet-button"><i class="fa fa-pencil"> Tweeter</i></button></li>
+      </ul>
     </div>
 </nav>
 
