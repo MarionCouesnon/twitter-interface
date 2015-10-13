@@ -2,49 +2,38 @@ body {
   background-color: tint($twitter-light-grey, 60%);
 }
 
-.nav-bar {
-  background-color: white;
-  border-bottom: 1px solid $twitter-light-grey;
-  height: 46px;
-  letter-spacing: 0.01em;
+.grid2 {
+  @include outer-container;
 
-  .grid-container {
-    @include outer-container;
+  .card {
+    background-color: white;
+    border: 1px solid $twitter-light-grey;
+    border-radius: 5px;
+    margin-top: $small-spacing;
+  }
 
-    display: flex;
-    .main-nav {
-      display: flex;
-    }
+    .sidebar {
+      @include span-columns(3);
 
-    .logo {
-      color: $twitter-bird;
-      font-size: 1.5em;
-    }
+      .profil {
+        height: 195px;
+      }
 
-    .search-bar {
-      align-self: center;
+      .tendance {
+        height: 255px;
+      }
 
-      #search-bar{
-        border-radius: 50px;
-        background-color: $twitter-white;
+      .suggestions {
+        height: 273px;
+      }
+
+      .footer {
+        height: 195px;
       }
     }
-  }
-}
 
-
-.icon {
-  color: $twitter-grey;
-  flex: row;
-  margin-right: 12px;
-  font-size: 0.8em;
-  &:hover {
-    color: $twitter-blue;
-    transition: $base-duration * 2;
+  .flux {
+    @include span-columns(6);
+    height: 1000px;
   }
-  .fa {
-    margin: 11px 4px 0 10px;
-    font-size: 20px;
-  }
-
 }
