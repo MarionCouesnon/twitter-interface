@@ -2,28 +2,31 @@
   background-color: white;
   border-bottom: 1px solid $twitter-light-grey;
   height: 46px;
-  letter-spacing: 0.01em;
+
 
   .grid-container {
     @include outer-container;
-    display: flex;
-    justify-content: center;
 
     .left-nav, .right-nav {
-      display: flex;
+      @include span-columns(5);
     }
 
     .logo {
+      @include span-columns(2);
       color: $twitter-bird;
       font-size: 1.5em;
+      text-align: center;
     }
 
     .search-bar {
-
       #search-bar{
         border-radius: 50px;
         background-color: $twitter-white;
       }
+      // .fa-search {
+      //   position: absolute;
+      //   top: 10px;
+      // }
     }
   }
 }
@@ -33,6 +36,8 @@
   flex: row;
   margin-right: 12px;
   font-size: 0.8em;
+  letter-spacing: 0.01em;
+
   &:hover {
     color: $twitter-blue;
     transition: $base-duration * 2;
