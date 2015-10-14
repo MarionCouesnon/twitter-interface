@@ -1,26 +1,62 @@
+$navbar-height: 46px;
+
 .nav-bar {
+  position: relative;
   background-color: white;
   border-bottom: 1px solid $twitter-light-grey;
-  height: 46px;
+  height: $navbar-height;
 
   .grid-container {
     @include outer-container;
 
     .left-nav, .right-nav {
-      @include span-columns(5);
+      //@include span-columns(5);
     }
 
     .logo {
-      @include span-columns(2);
+      position: absolute;
+      left: 50%;
+      top: 2px;
+      //@include span-columns(2);
       color: $twitter-bird;
       font-size: 1.5em;
       text-align: center;
     }
 
-    .search-bar {
-      #search-bar{
-        border-radius: 50px;
-        background-color: $twitter-white;
+    .left-nav {
+      float: left;
+    }
+
+    .right-nav {
+      float: right;
+
+      li {
+        float: right;
+      }
+    }
+    .right-nav {
+      // display: flex;
+      // justify-content: space-between;
+      .search-bar {
+        //@include span-columns(3 of 5);
+        #search-bar{
+          border-radius: 50px;
+          background-color: $twitter-white;
+        }
+      }
+      .profile-shortcut {
+        //@include span-columns(1 of 5);
+        width: 32px;
+        height: 32px;
+
+        img {
+        border: 1px solid $medium-gray;
+        border-radius: 5px;
+          }
+        }
+      .tweeter-button {
+        //@include span-columns(1 of 5);
+
       }
     }
   }
@@ -29,42 +65,22 @@
 .icon {
   color: $twitter-grey;
   display: inline-block;
+  height: $navbar-height;
   font-size: 0.8em;
   letter-spacing: 0.01em;
-  position: relative;
-  width: 115px;
-  height: 0px;
-  transition: all $base-duration * 2;
-  min-width: 115px;
-  min-height: 0px;
+  overflow: hidden;
+  padding: 0 1em;
+  top: 0;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: -7px;
-    bottom: -40px;
-    width: inherit;
-    height: inherit;
-    background-color: $twitter-blue;
-  }
-
-  &:hover {
-    color: $twitter-blue;
-    transition: $base-duration * 2;
-    height: 5px;
-  }
   .fa {
-    margin: 11px 4px 0 10px;
-    font-size: $base-spacing;
-  }
-}
+    border-bottom: 5px solid $twitter-blue;
+    line-height: $navbar-height;
+    height: $navbar-height + 5px;
+    transition: all $base-duration * 2;
 
-.profile-shortcut {
-  width: 32px;
-  height: 32px;
-
-  img {
-  border: 1px solid $medium-gray;
-  border-radius: 5px;
+    &:hover {
+      color: $twitter-blue;
+      height: 45px;
+    }
   }
 }
