@@ -9,18 +9,18 @@ $navbar-height: 46px;
   .grid-container {
     @include outer-container;
 
-    .left-nav, .right-nav {
-      //@include span-columns(5);
-    }
-
     .logo {
       position: absolute;
       left: 50%;
       top: 2px;
-      //@include span-columns(2);
       color: $twitter-bird;
       font-size: 1.5em;
       text-align: center;
+    }
+
+    .left-nav, .right-nav {
+      font-size: 0.8em;
+      letter-spacing: 0.01em;
     }
 
     .left-nav {
@@ -29,34 +29,39 @@ $navbar-height: 46px;
 
     .right-nav {
       float: right;
+      line-height: $navbar-height;
 
       li {
         float: right;
       }
     }
+
     .right-nav {
-      // display: flex;
-      // justify-content: space-between;
+
       .search-bar {
-        //@include span-columns(3 of 5);
+        margin-right: $base-spacing;
+        margin-top: $base-spacing / 3 ;
+        position: relative;
+
         #search-bar{
           border-radius: 50px;
           background-color: $twitter-white;
         }
+
+        .fa-search{
+          position: absolute;
+          top: 0.5em;
+          right: 0.6em;
+        }
       }
+
       .profile-shortcut {
-        //@include span-columns(1 of 5);
         width: 32px;
         height: 32px;
-
-        img {
+        margin-right: $base-spacing;
+        margin-top: $base-spacing / 3 ;
         border: 1px solid $medium-gray;
         border-radius: 5px;
-          }
-        }
-      .tweeter-button {
-        //@include span-columns(1 of 5);
-
       }
     }
   }
@@ -66,8 +71,6 @@ $navbar-height: 46px;
   color: $twitter-grey;
   display: inline-block;
   height: $navbar-height;
-  font-size: 0.8em;
-  letter-spacing: 0.01em;
   overflow: hidden;
   padding: 0 1em;
   top: 0;
