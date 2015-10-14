@@ -31,11 +31,27 @@
   display: inline-block;
   font-size: 0.8em;
   letter-spacing: 0.01em;
-  margin-right: $base-spacing;
+  position: relative;
+  width: 115px;
+  height: 0px;
+  transition: all $base-duration * 2;
+  min-width: 115px;
+  min-height: 0px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    bottom: -40px;
+    width: inherit;
+    height: inherit;
+    background-color: $twitter-blue;
+  }
 
   &:hover {
     color: $twitter-blue;
     transition: $base-duration * 2;
+    height: 5px;
   }
   .fa {
     margin: 11px 4px 0 10px;
