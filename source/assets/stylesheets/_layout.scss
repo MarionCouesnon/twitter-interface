@@ -4,7 +4,8 @@ body {
 
 .grid2 {
   @include outer-container;
-
+  clear: both;
+  
   .card {
     background-color: white;
     border: 1px solid $twitter-light-grey;
