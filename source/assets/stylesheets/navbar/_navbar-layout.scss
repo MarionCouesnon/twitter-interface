@@ -1,0 +1,25 @@
+$navbar-height: 46px;
+
+.nav-bar {
+  position: relative;
+  background-color: white;
+  border-bottom: 1px solid $twitter-light-grey;
+  height: $navbar-height;
+}
+
+.left-nav {
+  float: left;
+}
+
+.right-nav {
+  float: right;
+  line-height: $navbar-height;
+
+  ul {
+    @include clearfix;
+
+    li {
+      float: right;
+    }
+  }
+}

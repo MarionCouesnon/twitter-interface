@@ -2,7 +2,7 @@ body {
   background-color: tint($twitter-light-grey, 60%);
 }
 
-.grid2 {
+.grid-container {
   @include outer-container;
 }
 

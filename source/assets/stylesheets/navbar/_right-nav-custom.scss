@@ -1,0 +1,35 @@
+$component-size : 32px;
+.right-nav li {
+  margin: 7px $base-spacing 0 0;
+
+  .tweeter-button {
+    margin-right: 0px;
+  }
+}
+
+.search-bar {
+  color: $twitter-mid-grey;
+  height: $component-size;
+  position: relative;
+  width: 221px;
+
+  .fa-search {
+    position: absolute;
+    top: 0.6em;
+    right: 0.6em;
+  }
+}
+
+#search-bar {
+  background-color: $twitter-white;
+  border: 1px solid $twitter-light-grey;
+  border-radius: 21px;
+  padding-left: $small-spacing;
+}
+
+.profile-shortcut {
+  width: $component-size;
+  height: $component-size;
+  border: 1px solid $medium-gray;
+  border-radius: 5px;
+}
