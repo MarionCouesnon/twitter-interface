@@ -1,10 +1,10 @@
 .icon {
   color: $twitter-grey;
-  display: inline-block;
+  float: left;
   height: $navbar-height;
   overflow: hidden;
   padding: 0 1em;
-  top: 0;
+
 
   .fa {
     border-bottom: 5px solid $twitter-blue;

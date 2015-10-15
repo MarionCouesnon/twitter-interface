@@ -8,33 +8,37 @@ $navbar-height: 46px;
 
   .grid-container {
     @include outer-container;
-    height: $navbar-height;
+    
 
-    .logo {
-      position: absolute;
-      left: 50%;
-      top: 2px;
-      color: $twitter-bird;
-      font-size: 1.5em;
-      text-align: center;
-    }
-
-    .left-nav, .right-nav {
-      font-size: 0.8em;
-      letter-spacing: 0.01em;
-    }
-
-    .left-nav {
-      float: left;
-    }
-
-    .right-nav {
-      float: right;
-      line-height: $navbar-height;
-
-      li {
-        float: right;
+      .logo {
+        position: absolute;
+        left: 50%;
+        top: 2px;
+        color: $twitter-bird;
+        font-size: 1.5em;
+        text-align: center;
       }
+
+      .left-nav, .right-nav {
+        font-size: 0.8em;
+        letter-spacing: 0.01em;
+      }
+
+      .left-nav {
+        float: left;
+      }
+
+      .right-nav {
+        float: right;
+        line-height: $navbar-height;
+
+        ul {
+          @include clearfix;
+
+          li {
+            float: right;
+          }
+        }
     }
   }
 }

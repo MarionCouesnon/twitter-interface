@@ -4,37 +4,36 @@ body {
 
 .grid2 {
   @include outer-container;
-  clear: both;
-  
-  .card {
-    background-color: white;
-    border: 1px solid $twitter-light-grey;
-    border-radius: 5px;
-    margin-top: $small-spacing;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid $twitter-light-grey;
+  border-radius: 5px;
+  margin-top: $small-spacing;
+}
+
+.flux {
+  @include span-columns(6);
+  height: 1000px;
+}
+
+.sidebar {
+  @include span-columns(3);
+
+  .profil {
+    height: 195px;
   }
 
-    .sidebar {
-      @include span-columns(3);
+  .tendance {
+    height: 255px;
+  }
 
-      .profil {
-        height: 195px;
-      }
+  .suggestions {
+    height: 273px;
+  }
 
-      .tendance {
-        height: 255px;
-      }
-
-      .suggestions {
-        height: 273px;
-      }
-
-      .footer {
-        height: 195px;
-      }
-    }
-
-  .flux {
-    @include span-columns(6);
-    height: 1000px;
+  .footer {
+    height: 195px;
   }
 }
