@@ -21,6 +21,12 @@ $component-size : 32px;
   border: 1px solid $twitter-light-grey;
   border-radius: 21px;
   padding-left: $small-spacing;
+  font-weight: 200;
+  font-size: 12px;
+
+  &:focus {
+    background-color: white;
+  }
 }
 
 .profile-shortcut {
