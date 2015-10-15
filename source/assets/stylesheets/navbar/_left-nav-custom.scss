@@ -17,13 +17,13 @@
     color: $twitter-blue;
     height: 45px;
   }
-}
 
-li .fa {
-  margin: 11px 0 0 10px;
-  font-size: 1.4em;
-}
+  span {
+    letter-spacing: 0.03em;
+  }
 
-li span {
-  letter-spacing: 0.03em;
+  .fa {
+    margin: 11px 0 0 10px;
+    font-size: 1.4em;
+  }
 }
