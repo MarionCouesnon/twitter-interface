@@ -8,6 +8,7 @@ $navbar-height: 46px;
 
   .grid-container {
     @include outer-container;
+    height: $navbar-height;
 
     .logo {
       position: absolute;
