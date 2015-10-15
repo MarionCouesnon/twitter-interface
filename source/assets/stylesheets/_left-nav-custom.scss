@@ -1,0 +1,20 @@
+.icon {
+  color: $twitter-grey;
+  display: inline-block;
+  height: $navbar-height;
+  overflow: hidden;
+  padding: 0 1em;
+  top: 0;
+
+  .fa {
+    border-bottom: 5px solid $twitter-blue;
+    line-height: $navbar-height;
+    height: $navbar-height + 5px;
+    transition: all $base-duration * 2;
+
+    &:hover {
+      color: $twitter-blue;
+      height: 45px;
+    }
+  }
+}

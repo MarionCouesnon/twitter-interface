@@ -35,55 +35,5 @@ $navbar-height: 46px;
         float: right;
       }
     }
-
-    .right-nav {
-
-      .search-bar {
-        margin-right: $base-spacing;
-        margin-top: $base-spacing / 3 ;
-        position: relative;
-
-        #search-bar{
-          border-radius: 50px;
-          background-color: $twitter-white;
-        }
-
-        .fa-search{
-          position: absolute;
-          top: 0.5em;
-          right: 0.6em;
-        }
-      }
-
-      .profile-shortcut {
-        width: 32px;
-        height: 32px;
-        margin-right: $base-spacing;
-        margin-top: $base-spacing / 3 ;
-        border: 1px solid $medium-gray;
-        border-radius: 5px;
-      }
-    }
-  }
-}
-
-.icon {
-  color: $twitter-grey;
-  display: inline-block;
-  height: $navbar-height;
-  overflow: hidden;
-  padding: 0 1em;
-  top: 0;
-
-  .fa {
-    border-bottom: 5px solid $twitter-blue;
-    line-height: $navbar-height;
-    height: $navbar-height + 5px;
-    transition: all $base-duration * 2;
-
-    &:hover {
-      color: $twitter-blue;
-      height: 45px;
-    }
   }
 }
