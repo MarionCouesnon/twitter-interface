@@ -3,17 +3,27 @@
   float: left;
   height: $navbar-height;
   overflow: hidden;
-  padding: 0 1em;
+}
 
-  .fa {
-    border-bottom: 5px solid $twitter-blue;
-    line-height: $navbar-height;
-    height: $navbar-height + 5px;
-    transition: all $base-duration * 2;
+.label-icon {
+  border-bottom: 5px solid $twitter-blue;
+  display: block;
+  height: $navbar-height + 5px;
+  line-height: 1;
+  padding: 0 14px 0 4px;
+  transition: all $base-duration * 2;
 
-    &:hover {
-      color: $twitter-blue;
-      height: 45px;
-    }
+  &:hover {
+    color: $twitter-blue;
+    height: 45px;
   }
+}
+
+li .fa {
+  margin: 11px 0 0 10px;
+  font-size: 1.4em;
+}
+
+li span {
+  letter-spacing: 0.03em;
 }
