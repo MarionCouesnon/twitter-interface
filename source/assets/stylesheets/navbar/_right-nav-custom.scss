@@ -1,10 +1,6 @@
 $component-size : 32px;
-.right-nav li {
+.right-nav li:not(.tweeter-button) {
   margin: 7px $base-spacing 0 0;
-
-  .tweeter-button {
-    margin-right: 0px;
-  }
 }
 
 .search-bar {
