@@ -34,9 +34,10 @@
 }
 
 .profile-picture {
+  display: inline-block !important;
   border-radius: 6px;
   background-color: #fff;
-  margin: -30px 0 0 8px;
+  //margin: -30px 0 0 8px;
   padding: 1px;
   //vertical-align: bottom;
 
@@ -44,7 +45,13 @@
     border-radius: 7px;
     border: 2px solid #fff;
     height: 72px;
-    width: 72px;
+    //width: 72px;
   }
+}
 
+.dashboard-profile {
+  background-image: url(http://24.media.tumblr.com/b6f2b616890ee090fca2421ee91af6dd/tumblr_mq7oxwSe3x1sramtho1_500.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -40px;
 }

@@ -21,7 +21,7 @@ body {
 .sidebar {
   @include span-columns(3);
 
-  .profil {
+  .dashboard-profile {
     height: 195px;
   }
 
