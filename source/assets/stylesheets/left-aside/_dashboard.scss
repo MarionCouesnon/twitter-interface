@@ -1,0 +1,34 @@
+.profile-infos {
+  $base-spacing: 1.5em !default;
+  $base-font-color: $twitter-mid-grey;
+  $stats-color: $twitter-blue;
+
+  padding: $base-spacing / 2;
+
+  // ul {
+  //   //padding: 0;
+  // }
+
+  li {
+    color: $stats-color;
+    display: inline;
+    float: left;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.1em;
+    padding: 0 0.7em;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  span {
+    color: $base-font-color;
+    display: block;
+    letter-spacing: 0.05em;
+    font-size: 0.55em;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+}
