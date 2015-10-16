@@ -78,11 +78,12 @@
     font-weight: bold;
     line-height: 21px;
   }
-  .mention {
-    display: block;
-    //box-sizing: padding-box;
-    color: $twitter-grey;
-    font-size: 12px;
-    font-weight: normal;
-  }
+}
+
+.mention {
+  display: block;
+  //box-sizing: padding-box;
+  color: $twitter-grey;
+  font-size: 12px;
+  font-weight: normal;
 }

@@ -1,25 +1,16 @@
-.tweet-bg {
-  position: relative;
-  background-color: #EBF4FB;
-  border-radius: 3px 3px 0 0;
-  padding: 10px 12px;
+.tweet-account {
+  display: inline;
+
+  img {
+    width: $navbar-height;
+    margin: $small-spacing;
+  }
 }
 
-.tweet-main > img {
-  position: absolute;
-  width: $component-size;
-  border-radius: 4px;
-  left: 28px;
-  top: 13px;
-}
+.tweet-content {
+  margin-left: 58px;
 
-.tweet-input {
-  margin-left: 56px;
-  color: $twitter-blue;
-}
-
-.fa-camera {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  .mention {
+    
+  }
 }
