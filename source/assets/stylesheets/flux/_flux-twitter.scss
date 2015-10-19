@@ -60,3 +60,15 @@
     color: $twitter-mid-grey;
   }
 }
+
+.fa-reply:hover, .fa-ellipsis-h:hover {
+  color: $highlight-blue;
+}
+
+.fa-retweet:hover, .retweet-number:hover {
+  color: $highlight-green;
+}
+
+.fa-star:hover, .fav-number:hover {
+  color: $highlight-yellow;
+}
