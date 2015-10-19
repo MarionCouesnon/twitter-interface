@@ -1,16 +1,62 @@
-.tweet-account {
-  display: inline;
-
-  img {
-    width: $navbar-height;
-    margin: $small-spacing;
-  }
+.tweet {
+  border-bottom: 1px solid $twitter-light-grey;
 }
 
 .tweet-content {
-  margin-left: 58px;
 
-  .mention {
-    
+  margin-left: 58px;
+  font-size: 14px;
+  padding: $small-spacing;
+}
+
+.account-picture {
+  border-radius: 5px;
+  float: left;
+  width: 48px;
+  margin-top: 3px;
+  margin-left: -58px;
+}
+
+.account-name {
+  color: #000;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.account-link {
+  color: $twitter-grey;
+  font-weight: normal;
+}
+
+.img-preview {
+  border-radius: 5px;
+}
+
+.link {
+  color: $twitter-blue;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: .01em;
+}
+.share-icons {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  width: 80px;
+
+  .fa {
+    font-size: 18px;
+    color: darken($twitter-light-grey, 10%);
+  }
+
+  .popularity-figures {
+    display: inline-block;
+    margin-left: 6px;
+    font-weight: bold;
+    color: $twitter-mid-grey;
   }
 }
